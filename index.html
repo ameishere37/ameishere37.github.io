@@ -9,9 +9,15 @@
 </head>
 
 <body>
+  <div class="bg"></div>
+
   <header class="container">
     <nav class="nav">
-      <a class="logo" href="#top">Jay Zhang</a>
+      <a class="logo" href="#top">
+        <span class="logo-dot"></span>
+        <span>Jay Zhang</span>
+      </a>
+
       <div class="nav-links">
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
@@ -21,12 +27,21 @@
     </nav>
 
     <section id="top" class="hero">
-      <div class="hero-text">
-        <p class="kicker">Applied Data Science · SQL TA · ETL / Dashboards</p>
-        <h1>Hi, I’m <span class="accent">Jiarong (Jay) Zhang</span>.</h1>
+      <div class="hero-left">
+        <div class="badge-row">
+          <span class="badge">Applied Data Science</span>
+          <span class="badge">SQL TA</span>
+          <span class="badge">ETL • Dashboards</span>
+        </div>
+
+        <h1>
+          Building <span class="grad">data products</span> that turn<br/>
+          messy data into clear decisions.
+        </h1>
+
         <p class="sub">
-          I build data pipelines, dashboards, and analytics tools that turn messy data into clear decisions.
-          Currently at Syracuse University (iSchool).
+          I’m <strong>Jiarong (Jay) Zhang</strong>, a senior at Syracuse University (iSchool).
+          I work with <strong>SQL, Python, ETL</strong>, and build <strong>Streamlit dashboards</strong>.
         </p>
 
         <div class="cta">
@@ -34,100 +49,145 @@
           <a class="btn ghost" href="./resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
         </div>
 
-        <div class="links">
-          <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
-          <span>·</span>
-          <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener">LinkedIn</a>
-          <span>·</span>
-          <a href="mailto:your-email@syr.edu">your-email@syr.edu</a>
+        <div class="quicklinks">
+          <a class="q" href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+          <span class="sep">•</span>
+          <a class="q" href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener">LinkedIn</a>
+          <span class="sep">•</span>
+          <a class="q" href="mailto:your-email@syr.edu">your-email@syr.edu</a>
         </div>
       </div>
 
-      <div class="hero-card">
-        <div class="card">
-          <p class="card-title">Currently</p>
-          <ul class="list">
-            <li>Senior @ Syracuse iSchool</li>
-            <li>Teaching Assistant (SQL)</li>
-            <li>Interests: Data Engineering, Analytics, Product</li>
-          </ul>
-        </div>
+      <div class="hero-right">
+        <div class="panel">
+          <div class="panel-head">
+            <p class="panel-title">Snapshot</p>
+            <p class="panel-sub">What I’m focused on right now</p>
+          </div>
 
-        <div class="card">
-          <p class="card-title">Highlights</p>
-          <ul class="list">
-            <li>SQL modeling & normalization</li>
-            <li>Python ETL / APIs / automation</li>
-            <li>Streamlit dashboards</li>
-          </ul>
+          <div class="panel-grid">
+            <div class="stat">
+              <p class="stat-k">Primary</p>
+              <p class="stat-v">SQL • Python</p>
+            </div>
+            <div class="stat">
+              <p class="stat-k">Strength</p>
+              <p class="stat-v">Explaining clearly</p>
+            </div>
+            <div class="stat">
+              <p class="stat-k">Building</p>
+              <p class="stat-v">ETL + dashboards</p>
+            </div>
+            <div class="stat">
+              <p class="stat-k">Looking for</p>
+              <p class="stat-v">Intern / New Grad</p>
+            </div>
+          </div>
+
+          <div class="panel-line"></div>
+
+          <p class="mini muted">
+            Tip: Put your best 2–3 projects first. Add “what it does + results + stack”.
+          </p>
         </div>
       </div>
     </section>
   </header>
 
-
   <main class="container">
     <!-- Projects -->
     <section id="projects" class="section">
       <div class="section-head">
-        <h2>Projects</h2>
-        <p class="muted">A few things I’ve built (replace with your real links).</p>
+        <div>
+          <h2>Projects</h2>
+          <p class="muted">Replace links with your real repos / demos.</p>
+        </div>
+        <a class="btn ghost smallbtn" href="https://github.com/your-username" target="_blank" rel="noopener">All on GitHub</a>
       </div>
 
       <div class="grid">
-        <article class="project">
-          <div class="project-top">
+        <article class="card project">
+          <div class="toprow">
             <h3>UniBrow — Dataset Browser</h3>
-            <span class="tag">Streamlit</span><span class="tag">Python</span>
+            <div class="tags">
+              <span class="tag">Streamlit</span>
+              <span class="tag">Python</span>
+            </div>
           </div>
           <p class="muted">
-            A lightweight web app to browse datasets, preview columns, and generate quick summaries.
+            Browse datasets, preview columns, and generate quick summaries for exploration.
           </p>
-          <div class="project-links">
-            <a href="https://github.com/your-username/unibrow" target="_blank" rel="noopener">Code</a>
-            <a href="https://your-demo-link.com" target="_blank" rel="noopener">Live Demo</a>
+          <div class="meta">
+            <span class="chip">Focus: usability</span>
+            <span class="chip">Type: web app</span>
+          </div>
+          <div class="actions">
+            <a class="link" href="https://github.com/your-username/unibrow" target="_blank" rel="noopener">Code →</a>
+            <a class="link" href="https://your-demo-link.com" target="_blank" rel="noopener">Live Demo →</a>
           </div>
         </article>
 
-        <article class="project">
-          <div class="project-top">
+        <article class="card project">
+          <div class="toprow">
             <h3>Parking Tickets Visualization</h3>
-            <span class="tag">Streamlit</span><span class="tag">Folium</span>
+            <div class="tags">
+              <span class="tag">Streamlit</span>
+              <span class="tag">Maps</span>
+            </div>
           </div>
           <p class="muted">
-            Interactive map dashboard for location patterns, hotspots, and time trends.
+            Interactive map dashboard for hotspots, trends, and location patterns.
           </p>
-          <div class="project-links">
-            <a href="https://github.com/your-username/parking-dashboard" target="_blank" rel="noopener">Code</a>
-            <a href="https://your-demo-link.com" target="_blank" rel="noopener">Live Demo</a>
+          <div class="meta">
+            <span class="chip">Focus: insight</span>
+            <span class="chip">Type: dashboard</span>
+          </div>
+          <div class="actions">
+            <a class="link" href="https://github.com/your-username/parking-dashboard" target="_blank" rel="noopener">Code →</a>
+            <a class="link" href="https://your-demo-link.com" target="_blank" rel="noopener">Live Demo →</a>
           </div>
         </article>
 
-        <article class="project">
-          <div class="project-top">
+        <article class="card project">
+          <div class="toprow">
             <h3>Bills-in-USD ETL Pipeline</h3>
-            <span class="tag">ETL</span><span class="tag">API</span><span class="tag">Python</span>
+            <div class="tags">
+              <span class="tag">ETL</span>
+              <span class="tag">API</span>
+              <span class="tag">Python</span>
+            </div>
           </div>
           <p class="muted">
-            Converts multi-currency bills into USD via API, cleans data, and outputs analysis-ready tables.
+            Converts multi-currency bills into USD via API, cleans data, outputs analysis-ready tables.
           </p>
-          <div class="project-links">
-            <a href="https://github.com/your-username/bills-in-usd" target="_blank" rel="noopener">Code</a>
-            <a href="#" target="_blank" rel="noopener">Write-up</a>
+          <div class="meta">
+            <span class="chip">Focus: reliability</span>
+            <span class="chip">Type: pipeline</span>
+          </div>
+          <div class="actions">
+            <a class="link" href="https://github.com/your-username/bills-in-usd" target="_blank" rel="noopener">Code →</a>
+            <a class="link" href="#" target="_blank" rel="noopener">Write-up →</a>
           </div>
         </article>
 
-        <article class="project">
-          <div class="project-top">
-            <h3>SQL Data Model (Course TA)</h3>
-            <span class="tag">SQL</span><span class="tag">Data Modeling</span>
+        <article class="card project">
+          <div class="toprow">
+            <h3>SQL Data Modeling (TA)</h3>
+            <div class="tags">
+              <span class="tag">SQL</span>
+              <span class="tag">Modeling</span>
+            </div>
           </div>
           <p class="muted">
-            ER modeling, normalization (2NF/3NF), and query design examples (sanitized).
+            ER modeling, normalization (2NF/3NF), and query examples (sanitized).
           </p>
-          <div class="project-links">
-            <a href="https://github.com/your-username/sql-modeling" target="_blank" rel="noopener">Repo</a>
-            <a href="#" target="_blank" rel="noopener">Notes</a>
+          <div class="meta">
+            <span class="chip">Focus: clarity</span>
+            <span class="chip">Type: notes</span>
+          </div>
+          <div class="actions">
+            <a class="link" href="https://github.com/your-username/sql-modeling" target="_blank" rel="noopener">Repo →</a>
+            <a class="link" href="#" target="_blank" rel="noopener">Notes →</a>
           </div>
         </article>
       </div>
@@ -136,104 +196,18 @@
     <!-- Experience -->
     <section id="experience" class="section">
       <div class="section-head">
-        <h2>Experience</h2>
-        <p class="muted">Keep this short and skimmable.</p>
+        <div>
+          <h2>Experience</h2>
+          <p class="muted">Short, strong bullets. Keep it scannable.</p>
+        </div>
       </div>
 
-      <div class="timeline">
-        <div class="item">
-          <div class="item-top">
-            <h3>Teaching Assistant — SQL (IST359)</h3>
-            <span class="muted">Syracuse University · 2026</span>
+      <div class="stack">
+        <div class="card item">
+          <div class="row">
+            <div>
+              <h3>Teaching Assistant — SQL (IST359)</h3>
+              <p class="muted">Syracuse University · 2026</p>
+            </div>
+            <span class="pill">Education</span>
           </div>
-          <ul class="bullets">
-            <li>Supported students with relational modeling, normalization, and query debugging.</li>
-            <li>Explained technical concepts clearly in office hours and written feedback.</li>
-          </ul>
-        </div>
-
-        <div class="item">
-          <div class="item-top">
-            <h3>Applied Data Science — Coursework & Projects</h3>
-            <span class="muted">Syracuse iSchool</span>
-          </div>
-          <ul class="bullets">
-            <li>Built pipelines and dashboards using Python, SQL, and visualization tools.</li>
-            <li>Worked with messy datasets, APIs, and analytics workflows end-to-end.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="section">
-      <div class="section-head">
-        <h2>Skills</h2>
-        <p class="muted">Choose what matches the roles you want.</p>
-      </div>
-
-      <div class="skills">
-        <div class="card">
-          <p class="card-title">Data</p>
-          <div class="pill-row">
-            <span class="pill">SQL</span>
-            <span class="pill">Data Modeling</span>
-            <span class="pill">ETL</span>
-            <span class="pill">APIs</span>
-            <span class="pill">Data Cleaning</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <p class="card-title">Programming</p>
-          <div class="pill-row">
-            <span class="pill">Python</span>
-            <span class="pill">Pandas</span>
-            <span class="pill">Streamlit</span>
-            <span class="pill">Git</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <p class="card-title">Analytics</p>
-          <div class="pill-row">
-            <span class="pill">Dashboards</span>
-            <span class="pill">Visualization</span>
-            <span class="pill">A/B Thinking</span>
-            <span class="pill">Storytelling</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <div class="section-head">
-        <h2>Contact</h2>
-        <p class="muted">Recruiters and collaborators — feel free to reach out.</p>
-      </div>
-
-      <div class="contact">
-        <div class="card">
-          <p><strong>Email:</strong> <a href="mailto:your-email@syr.edu">your-email@syr.edu</a></p>
-          <p><strong>GitHub:</strong> <a href="https://github.com/your-username" target="_blank" rel="noopener">github.com/your-username</a></p>
-          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener">linkedin.com/in/your-linkedin</a></p>
-        </div>
-        <div class="card">
-          <p class="muted small">
-            Tip: If you don’t have a PDF resume yet, you can temporarily remove the “Resume (PDF)” button above.
-          </p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="container footer">
-    <p class="muted small">© <span id="year"></span> Jiarong (Jay) Zhang · Built with GitHub Pages</p>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
